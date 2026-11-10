@@ -135,6 +135,25 @@
 									<li><a href="https://app.powerbi.com/links/l1EstMUb1K?ctid=9d934e1a-cc52-4370-831d-e911ccb25930&pbi_source=linkShare" class="button large">VIEW PROJECT</a></li>
 								</ul>
 							</article>
+							<article class="post featured">
+	<header class="major">
+
+		<h2><a href="YOUR_POWER_BI_LINK">TRAVEL ANALYTICS DASHBOARD<br />
+	</a></h2>
+		<p>Travel management companies process thousands of ticket, hotel and ancillary transactions every day, yet management reporting still depended on manual spreadsheet consolidation of exported CSV files. This meant weekly and monthly reports were delayed by days, figures conflicted, and there was no single view of the business or any access control over sensitive commercial data.
+
+I designed and built a Centralized Travel Analytics and Decision Support System to fix this. A FastAPI upload portal secured with JWT authentication, TOTP two-factor login and audit logging accepts the raw exports. A Python (pandas) ETL pipeline automatically detects whether each file is ticket, hotel or ancillary data, cleans and standardizes it, rejects duplicates, and loads it in atomic 5,000-row batches into a PostgreSQL warehouse built around a unified bookings table with 16 indexes and 2 reporting views. Power BI sits on top, with a star-schema model, 21 DAX measures and interactive pages for Travel Overview, Clients and Airlines, and Destinations.
+
+Tested on a synthetic dataset of 29,929 structured bookings gotten from kaggle, the system ingested every record without error, loaded 5,000 rows in about 1.8 seconds, and passed all 27 unit, integration, security and performance tests. The dashboard shows ₦2.39bn in revenue, with domestic travel making up 73.1% of bookings and Economy class 86.75%.
+
+The result compresses a reporting cycle that used to take days of spreadsheet work into minutes (upload, refresh, analyse), showing that enterprise-grade automated reporting is achievable for SME travel agencies on an open, low-cost stack. This work was completed as my final project for my Professional Master's in Information Technology at Miva Open University..<br />
+	</header>
+	<a href="https://app.powerbi.com/links/gLjfqxpvqu?ctid=9d934e1a-cc52-4370-831d-e911ccb25930&pbi_source=linkShare" class="image main"><img src="./travel_analytics_image.png" alt="" /></a>
+	<ul class="actions special">
+		<li><a href="https://app.powerbi.com/links/gLjfqxpvqu?ctid=9d934e1a-cc52-4370-831d-e911ccb25930&pbi_source=linkShare" class="button large">VIEW PROJECT</a></li>
+		<li><a href="#" class="button large">VIEW CODE</a></li>
+	</ul>
+</article>
 
 							
 
